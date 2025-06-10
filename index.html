@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="CV, Walter Steven Mirabá, Computación, Proyectos, Habilidades">
-  <meta name="description" content="Currículum Vitae de Walter Steven Mirabá Condoy.">
-  <meta name="author" content="Walter Steven Mirabá Condoy">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="CV, Walter Steven Mirabá, Computación, Proyectos, Habilidades" />
+  <meta name="description" content="Currículum Vitae de Walter Steven Mirabá Condoy." />
+  <meta name="author" content="Walter Steven Mirabá Condoy" />
   <title>CV - Walter Steven Mirabá Condoy</title>
 </head>
 <body>
 
   <!-- Encabezado -->
-  <header>
+  <header style="display:flex; align-items:center; gap:1rem;">
+    <!-- Foto al lado del nombre -->
+    <img src="https://picsum.photos/100" alt="Foto de Walter Steven Mirabá Condoy" style="border-radius:50%; width:100px; height:100px; object-fit:cover;" />
     <h1>Walter Steven Mirabá Condoy</h1>
-    
-    <!-- Navegación -->
-    <nav>
-      <ul>
-        <li><a href="#contacto">Datos de contacto</a></li>
-        <li><a href="#estudios">Estudios</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#referencias">Referencias</a></li>
-      </ul>
-    </nav>
   </header>
+  
+  <!-- Navegación -->
+  <nav>
+    <ul>
+      <li><a href="#contacto">Datos de contacto</a></li>
+      <li><a href="#estudios">Estudios</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#formulario">Formulario</a></li>
+      <li><a href="#referencias">Referencias</a></li>
+    </ul>
+  </nav>
 
   <!-- Contenido principal -->
   <main>
@@ -35,24 +38,26 @@
       <p><strong>Correo:</strong> stevenmiraba@example.com</p>
       <p><strong>Teléfono:</strong> +593 987 654 321</p>
       <p><strong>Dirección:</strong> Alborada VI etapa, Guayaquil, Ecuador</p>
-      <p><strong>GitHub:</strong> <a href="https://stevenmiraba.github.io/StevenMiraba/" target="_blank">Mi sitio web</a></p>
+      <p><strong>GitHub:</strong> <a href="https://stevenmiraba.github.io/StevenMiraba/" target="_blank" rel="noopener noreferrer">Mi sitio web</a></p>
     </section>
 
     <!-- Sección: Estudios -->
     <section id="estudios">
       <h2>Estudios</h2>
-      <ul>
-        <li><strong>Ingeniería en Computación</strong> – Universidad XYZ (2021 - Presente)</li>
-        <li><strong>Bachiller en Ciencias</strong> – Unidad Educativa ABC (Graduado en 2020)</li>
-      </ul>
+      <!-- Lista ordenada -->
+      <ol>
+        <li>Ingeniería en Computación – Universidad XYZ (2021 - Presente)</li>
+        <li>Bachiller en Ciencias – Unidad Educativa ABC (Graduado en 2020)</li>
+      </ol>
     </section>
 
     <!-- Sección: Experiencia -->
     <section id="experiencia">
       <h2>Experiencia</h2>
+      <!-- Lista no ordenada -->
       <ul>
-        <li><strong>Desarrollador Web (freelance):</strong> Diseño de sitios personales con HTML, CSS y GitHub Pages.</li>
-        <li><strong>Proyecto académico:</strong> Sistema de transporte urbano con patrones de diseño (JavaFX).</li>
+        <li>Desarrollador Web (freelance): Diseño de sitios personales con HTML, CSS y GitHub Pages.</li>
+        <li>Proyecto académico: Sistema de transporte urbano con patrones de diseño (JavaFX).</li>
       </ul>
     </section>
 
@@ -65,12 +70,120 @@
         <li>Herramientas: VSCode, Git, Figma</li>
         <li>Otros: Trabajo en equipo, aprendizaje continuo, resolución de problemas</li>
       </ul>
+
+      <!-- Tabla con info sobre habilidades -->
+      <table>
+        <thead>
+          <tr>
+            <th>Habilidad</th>
+            <th>Nivel</th>
+            <th>Comentarios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Java</th>
+            <td>Avanzado</td>
+            <td>Experiencia en desarrollo de aplicaciones Java y JavaFX</td>
+          </tr>
+          <tr>
+            <th>Python</th>
+            <td>Intermedio</td>
+            <td>Proyectos de scripting y análisis de datos</td>
+          </tr>
+          <tr>
+            <th>JavaScript</th>
+            <td>Intermedio</td>
+            <td>Desarrollo web y manejo de frameworks básicos</td>
+          </tr>
+          <tr>
+            <th>HTML & CSS</th>
+            <td>Avanzado</td>
+            <td>Diseño y maquetación de sitios web responsivos</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección: Formulario -->
+    <section id="formulario">
+      <h2>Contacto</h2>
+      <form action="#" method="POST" novalidate>
+        <label for="nombre">Nombre completo*</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="area">Área de interés*</label>
+        <select id="area" name="area" required>
+          <option value="" disabled selected>Seleccione un área</option>
+          <option value="desarrollo">Desarrollo Web</option>
+          <option value="java">Programación en Java</option>
+          <option value="python">Python y Data Science</option>
+          <option value="diseño">Diseño UI/UX</option>
+        </select>
+
+        <fieldset>
+          <legend>¿Cómo prefieres trabajar?*</legend>
+          <label><input type="radio" name="trabajo" value="equipo" required /> En equipo</label>
+          <label><input type="radio" name="trabajo" value="individual" /> Individual</label>
+          <label><input type="radio" name="trabajo" value="mixto" /> Mixto</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tus habilidades*</legend>
+          <label><input type="checkbox" name="habilidades" value="java" required /> Java</label>
+          <label><input type="checkbox" name="habilidades" value="python" /> Python</label>
+          <label><input type="checkbox" name="habilidades" value="js" /> JavaScript</label>
+          <label><input type="checkbox" name="habilidades" value="css" /> CSS</label>
+        </fieldset>
+
+        <label for="mensaje">Mensaje*</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
     <!-- Sección: Referencias -->
     <section id="referencias">
       <h2>Referencias</h2>
-      <p>Disponibles a solicitud.</p>
+
+      <article>
+        <blockquote>
+          "Walter es un profesional comprometido y excelente en el desarrollo de software."
+        </blockquote>
+        <footer>
+          <p><strong>María López</strong>, Gerente de Proyectos en XYZ Ltda. - Colaboramos durante 2 años en proyectos de Java.</p>
+        </footer>
+      </article>
+
+      <article>
+        <blockquote>
+          "Su capacidad de aprendizaje y trabajo en equipo fue clave en nuestro éxito."
+        </blockquote>
+        <footer>
+          <p><strong>Carlos Pérez</strong>, Jefe de Desarrollo en ABC Corp. - Supervisor en prácticas profesionales.</p>
+        </footer>
+      </article>
+
+      <article>
+        <blockquote>
+          "Destaco su habilidad para resolver problemas complejos y su ética laboral."
+        </blockquote>
+        <footer>
+          <p><strong>Luisa Martínez</strong>, Directora Técnica en QRS Inc. - Trabajamos juntos en proyectos JavaFX.</p>
+        </footer>
+      </article>
+
+      <!-- Video de YouTube -->
+      <h3>Video profesional</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de Walter Steven Mirabá" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <!-- Mapa de Google Maps Escuela Superior Politécnica del Litoral -->
+      <h3>Ubicación - ESPOL</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.161787556565!2d-79.92407368574727!3d-2.205448937390865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d8f6a8a8e1e7f%3A0x7ee6816b71bfc392!2sEscuela%20Superior%20Politecnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1686305800000!5m2!1ses!2sec" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+        title="Mapa ESPOL"></iframe>
     </section>
 
   </main>
@@ -82,4 +195,4 @@
 
 </body>
 </html>
-<!-- Fin del código HTML -->
+<!-- Fin del documento HTML -->
