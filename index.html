@@ -1,0 +1,56 @@
+<!-- Estructura básica de un sitio HTML con meta, title y contenido -->
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <meta name="description" content="Este es un ejemplo de un sitio web básico con HTML, CSS y JavaScript.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, ejemplo, sitio web">
+    <meta name="author" content="Tu Nombre">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Inicio</h2>
+            <p>Este es el contenido de la página de inicio.</p>
+        </section>
+
+        <section id="about">
+            <h2>Acerca de</h2>
+            <p>Aquí puedes encontrar información sobre nosotros.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través del siguiente formulario.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Código JavaScript para interactividad
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('El documento está listo');
+        });
+    </script>
+</body>
+
+</html>
