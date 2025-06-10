@@ -7,107 +7,104 @@
   <meta name="description" content="Currículum Vitae de Walter Steven Mirabá Condoy." />
   <meta name="author" content="Walter Steven Mirabá Condoy" />
   <title>CV - Walter Steven Mirabá Condoy</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
+</head>
 
-  <!-- Encabezado -->
+<body>
+  <!-- ENCABEZADO -->
   <header style="display:flex; align-items:center; gap:1rem;">
     <!-- Foto al lado del nombre -->
-    <img src="https://picsum.photos/100" alt="Foto de Walter Steven Mirabá Condoy" style="border-radius:50%; width:100px; height:100px; object-fit:cover;" />
+    <img id="photo" src="https://picsum.photos/100" alt="Foto de Walter Steven Mirabá Condoy" style="border-radius:50%; width:100px; height:100px; object-fit:cover;" />
     <h1>Walter Steven Mirabá Condoy</h1>
   </header>
-  
-  <!-- Navegación -->
+
+  <!-- MENÚ DE NAVEGACIÓN -->
   <nav>
     <ul>
       <li><a href="#contacto">Datos de contacto</a></li>
       <li><a href="#estudios">Estudios</a></li>
       <li><a href="#experiencia">Experiencia</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#formulario">Formulario</a></li>
+      <li><a href="#formulario">Contacto</a></li>
       <li><a href="#referencias">Referencias</a></li>
     </ul>
   </nav>
 
-  <!-- Contenido principal -->
-  <main>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
 
-    <!-- Sección: Datos de contacto -->
-    <section id="contacto">
-      <h2>Datos de contacto</h2>
-      <p><strong>Correo:</strong> stevenmiraba@example.com</p>
-      <p><strong>Teléfono:</strong> +593 987 654 321</p>
-      <p><strong>Dirección:</strong> Alborada VI etapa, Guayaquil, Ecuador</p>
-      <p><strong>GitHub:</strong> <a href="https://stevenmiraba.github.io/StevenMiraba/" target="_blank" rel="noopener noreferrer">Mi sitio web</a></p>
-    </section>
+      <!-- 1 ── CONTACTO -->
+      <section id="contacto">
+        <h2 class="subtitle">Datos de Contacto</h2>
+        <ul>
+          <li><strong>Teléfono:</strong> 0998954954</li>
+          <li><strong>Correo:</strong> wsmiraba@espol.edu.ec</li>
+          <li><strong>Dirección:</strong> ALBORADA VI ETAPA</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/StevenMiraba" target="_blank" rel="noopener noreferrer">github.com/StevenMiraba</a></li>
+        </ul>
+      </section>
 
-    <!-- Sección: Estudios -->
-    <section id="estudios">
-      <h2>Estudios</h2>
-      <!-- Lista ordenada -->
-      <ol>
-        <li>Ingeniería en Computación – Universidad XYZ (2021 - Presente)</li>
-        <li>Bachiller en Ciencias – Unidad Educativa ABC (Graduado en 2020)</li>
-      </ol>
-    </section>
+      <!-- 2 ── ESTUDIOS -->
+      <section id="estudios">
+        <h2 class="subtitle">Estudios</h2>
+        <ul>
+          <li><strong>Ingeniería en Computación</strong><br>
+              Escuela Superior Politécnica del Litoral &nbsp;|&nbsp; Mayo 2023 – Presente &nbsp;|&nbsp; 5.º Semestre
+          </li>
+          <li><strong>Bachiller en Ciencias</strong><br>
+              Academia Naval «Cap. Leonardo Abad Astudillo»
+          </li>
+        </ul>
+      </section>
 
-    <!-- Sección: Experiencia -->
-    <section id="experiencia">
-      <h2>Experiencia</h2>
-      <!-- Lista no ordenada -->
-      <ul>
-        <li>Desarrollador Web (freelance): Diseño de sitios personales con HTML, CSS y GitHub Pages.</li>
-        <li>Proyecto académico: Sistema de transporte urbano con patrones de diseño (JavaFX).</li>
-      </ul>
-    </section>
+      <!-- 3 ── EXPERIENCIA / PROYECTOS -->
+      <section id="experiencia">
+        <h2 class="subtitle">Experiencia – Proyectos Académicos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Proyecto</th><th>Materia</th><th>Año</th><th>Enlace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sistema de reservas de vuelos</td>
+              <td>Programación Orientada a Objetos</td>
+              <td>2023 2S</td>
+              <td><a href="https://github.com/StevenMiraba/PAR4_PROY2P_MIRABA_MOREIRA_VALDIVIA" target="_blank" rel="noopener noreferrer">Proyecto POO</a></td>
+            </tr>
+            <tr>
+              <td>Sistema de reservas para agencia de viajes</td>
+              <td>Sistemas de Bases de Datos</td>
+              <td>2024 1S</td>
+              <td><a href="https://github.com/StevenMiraba/ProyectoBDG7" target="_blank" rel="noopener noreferrer">Proyecto SBD</a></td>
+            </tr>
+            <tr>
+              <td>Simulador de la aplicación de Contactos</td>
+              <td>Estructura de Datos</td>
+              <td>2024 1S</td>
+              <td><a href="https://github.com/DiegoBedoya1/Proyecto-Estructuras" target="_blank" rel="noopener noreferrer">Proyecto ED</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <!-- Sección: Habilidades -->
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Lenguajes: Java, Python, JavaScript</li>
-        <li>Desarrollo web: HTML, CSS, GitHub</li>
-        <li>Herramientas: VSCode, Git, Figma</li>
-        <li>Otros: Trabajo en equipo, aprendizaje continuo, resolución de problemas</li>
-      </ul>
+      <!-- 4 ── HABILIDADES -->
+      <section id="habilidades">
+        <h2 class="subtitle">Habilidades</h2>
+        <ul>
+          <li><strong>Idiomas:</strong> Inglés – Intermedio</li>
+          <li><strong>Lenguajes de programación:</strong> Python | Java | SQL</li>
+          <li><strong>Software:</strong> MySQL | GIT | Scene Builder (JavaFX) | NetBeans | VS Code</li>
+          <li><strong>Fortalezas:</strong> Compromiso | Trabajo en equipo | Comunicativo | Aprendizaje autodidacta</li>
+        </ul>
+      </section>
 
-      <!-- Tabla con info sobre habilidades -->
-      <table>
-        <thead>
-          <tr>
-            <th>Habilidad</th>
-            <th>Nivel</th>
-            <th>Comentarios</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Java</th>
-            <td>Avanzado</td>
-            <td>Experiencia en desarrollo de aplicaciones Java y JavaFX</td>
-          </tr>
-          <tr>
-            <th>Python</th>
-            <td>Intermedio</td>
-            <td>Proyectos de scripting y análisis de datos</td>
-          </tr>
-          <tr>
-            <th>JavaScript</th>
-            <td>Intermedio</td>
-            <td>Desarrollo web y manejo de frameworks básicos</td>
-          </tr>
-          <tr>
-            <th>HTML & CSS</th>
-            <td>Avanzado</td>
-            <td>Diseño y maquetación de sitios web responsivos</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Sección: Formulario -->
+      <!-- Sección: Formulario -->
     <section id="formulario">
-      <h2>Contacto</h2>
+      <h2 class="subtitle">Contacto de interés</h2>
       <form action="#" method="POST" novalidate>
         <label for="nombre">Nombre completo*</label>
         <input type="text" id="nombre" name="nombre" required />
@@ -145,7 +142,7 @@
 
     <!-- Sección: Referencias -->
     <section id="referencias">
-      <h2>Referencias</h2>
+      <h2 class="subtitle">Referencias</h2>
 
       <article>
         <blockquote>
@@ -173,26 +170,31 @@
           <p><strong>Luisa Martínez</strong>, Directora Técnica en QRS Inc. - Trabajamos juntos en proyectos JavaFX.</p>
         </footer>
       </article>
-
-      <!-- Video de YouTube -->
-      <h3>Video profesional</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de Walter Steven Mirabá" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      <!-- Mapa de Google Maps Escuela Superior Politécnica del Litoral -->
-      <h3>Ubicación - ESPOL</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.161787556565!2d-79.92407368574727!3d-2.205448937390865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d8f6a8a8e1e7f%3A0x7ee6816b71bfc392!2sEscuela%20Superior%20Politecnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1686305800000!5m2!1ses!2sec" 
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
-        title="Mapa ESPOL"></iframe>
     </section>
 
-  </main>
+      <!-- 5 ── MULTIMEDIA -->
+      <section id="multimedia">
+        <div style="margin-bottom:1.5rem">
+          <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Video de presentación"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.161787556565!2d-79.92407368574727!3d-2.205448937390865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d8f6a8a8e1e7f%3A0x7ee6816b71bfc392!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1686305800000!5m2!1ses!2sec"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Mapa ESPOL">
+        </iframe>
+      </section>
 
-  <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2025 Walter Steven Mirabá Condoy. Todos los derechos reservados.</p>
-  </footer>
+    </main>
 
-</body>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p style="text-align:center;margin:2rem 0 1rem 0;">&copy; 2025 Steven W. Miraba. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>
-<!-- Fin del documento HTML -->
+
